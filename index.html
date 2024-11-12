@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekosh - Connecting to Infinity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #fff, #a5a5a5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #a5a5a5;
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/api/placeholder/1200/600') center/cover;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #7928CA, #FF0080);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: #FF0080;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">TEKOSH</div>
+            <div class="tagline">Connecting to Infinity</div>
+        </header>
+
+        <section class="hero">
+            <h1>Welcome to the Future of Connection</h1>
+            <p style="margin: 2rem 0">Experience seamless integration and unlimited possibilities with Tekosh's innovative solutions.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Infinite Scalability</h3>
+                <p>Scale your operations without limits, backed by our robust infrastructure and cutting-edge technology.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Smart Integration</h3>
+                <p>Seamlessly connect your systems and devices with our intelligent integration platform.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Future-Ready</h3>
+                <p>Stay ahead of the curve with our forward-thinking solutions and continuous innovation.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Tekosh. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
